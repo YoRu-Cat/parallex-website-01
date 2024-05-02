@@ -5,83 +5,120 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Parallax Website</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
-    <header>
-      <h2 class="logo">Logo</h2>
-      <nav class="navigation">
-        <a href="#" class="active">Home</a>
-        <a href="#">About</a>
-        <a href="#">Service</a>
-        <a href="#">Contact</a>
-      </nav>
-    </header>
-    <section class="parallax">
-      <img src="hill1.png" alt="" id="hill1" />
-      <img src="hill2.png" alt="" id="hill2" />
-      <img src="hill3.png" alt="" id="hill3" />
-      <img src="hill4.png" alt="" id="hill4" />
-      <img src="hill5.png" alt="" id="hill5" />
-      <img src="tree.png" alt="" id="tree" />
-      <h2 id="text">Parallax Website</h2>
-      <img src="plant.png" alt="" id="plant" />
-      <img src="leaf.png" alt="" id="leaf" />
-    </section>
-    <section class="sec">
-      <h2>Parallax Scrolling Website</h2>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic fugiat quod
-        aspernatur molestias eos quae deserunt nostrum voluptate unde
-        repellendus. Consequuntur non doloribus veritatis reiciendis sunt nisi
-        quisquam architecto eligendi adipisci voluptates soluta, exercitationem
-        sit libero ad, dolor atque repudiandae obcaecati nostrum, velit natus
-        repellendus fugit? Assumenda quisquam reprehenderit natus officia
-        maiores? Rerum nisi voluptates odio atque, necessitatibus tempore
-        corrupti optio quos officia voluptatibus incidunt provident eveniet
-        fugit reprehenderit quasi cumque nihil inventore! Cum quasi vitae illum
-        quidem natus nam, repudiandae libero, hic placeat quos facere laboriosam
-        maxime dicta quod dolore quas odit ipsam minima. Sapiente debitis, nemo
-        minima nobis reprehenderit incidunt repellat voluptates pariatur
-        architecto ipsam neque praesentium itaque explicabo doloremque expedita
-        nulla, tempora quam modi quas ab, temporibus soluta! Voluptatem, dolores
-        tempora. Eveniet natus atque tempora perspiciatis deleniti.
-        <br /><br /><br />
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic fugiat quod
-        aspernatur molestias eos quae deserunt nostrum voluptate unde
-        repellendus. Consequuntur non doloribus veritatis reiciendis sunt nisi
-        quisquam architecto eligendi adipisci voluptates soluta, exercitationem
-        sit libero ad, dolor atque repudiandae obcaecati nostrum, velit natus
-        repellendus fugit? Assumenda quisquam reprehenderit natus officia
-        maiores? Rerum nisi voluptates odio atque, necessitatibus tempore
-        corrupti optio quos officia voluptatibus incidunt provident eveniet
-        fugit reprehenderit quasi cumque nihil inventore! Cum quasi vitae illum
-        quidem natus nam, repudiandae libero, hic placeat quos facere laboriosam
-        maxime dicta quod dolore quas odit ipsam minima. Sapiente debitis, nemo
-        minima nobis reprehenderit incidunt repellat voluptates pariatur
-        architecto ipsam neque praesentium itaque explicabo doloremque expedita
-        nulla, tempora quam modi quas ab, temporibus soluta! Voluptatem, dolores
-        tempora. Eveniet natus atque tempora perspiciatis deleniti.
-        <br /><br /><br />
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic fugiat quod
-        aspernatur molestias eos quae deserunt nostrum voluptate unde
-        repellendus. Consequuntur non doloribus veritatis reiciendis sunt nisi
-        quisquam architecto eligendi adipisci voluptates soluta, exercitationem
-        sit libero ad, dolor atque repudiandae obcaecati nostrum, velit natus
-        repellendus fugit? Assumenda quisquam reprehenderit natus officia
-        maiores? Rerum nisi voluptates odio atque, necessitatibus tempore
-        corrupti optio quos officia voluptatibus incidunt provident eveniet
-        fugit reprehenderit quasi cumque nihil inventore! Cum quasi vitae illum
-        quidem natus nam, repudiandae libero, hic placeat quos facere laboriosam
-        maxime dicta quod dolore quas odit ipsam minima. Sapiente debitis, nemo
-        minima nobis reprehenderit incidunt repellat voluptates pariatur
-        architecto ipsam neque praesentium itaque explicabo doloremque expedita
-        nulla, tempora quam modi quas ab, temporibus soluta! Voluptatem, dolores
-        tempora. Eveniet natus atque tempora perspiciatis deleniti.
-        <br /><br /><br />
-      </p>
-    </section>
+    <div id="main" data-scroll-container>
+      <header>
+        <h2 class="logo">Logo</h2>
+        <nav class="navigation">
+          <a href="#" class="active">Home</a>
+          <a href="#">About</a>
+          <a href="#">Service</a>
+          <a href="#">Contact</a>
+        </nav>
+      </header>
+      <section class="parallax" data-scroll>
+        <img
+          src="hill1.png"
+          alt=""
+          id="hill1"
+          data-scroll
+          data-scroll-speed="-4"
+        />
+        <img src="hill2.png" alt="" id="hill2" />
+        <img src="hill3.png" alt="" id="hill3" />
+        <img
+          src="hill4.png"
+          alt=""
+          id="hill4"
+          data-scroll
+          data-scroll-speed="3"
+          data-scroll-direction="horizontal"
+        />
+        <img
+          src="hill5.png"
+          alt=""
+          id="hill5"
+          data-scroll
+          data-scroll-speed="-3"
+          data-scroll-direction="horizontal"
+        />
+        <img src="tree.png" alt="" id="tree" />
+        <h2 id="text" data-scroll data-scroll-speed="-5">Parallax Website</h2>
+        <img src="plant.png" alt="" id="plant" />
+        <img
+          src="leaf.png"
+          alt="leaf"
+          id="leaf"
+          data-scroll
+          data-scroll-direction="horizontal"
+          data-scroll-speed="-3"
+        />
+      </section>
+      <section class="sec" data-scroll>
+        <h2>Parallax Scrolling Website</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic fugiat
+          quod aspernatur molestias eos quae deserunt nostrum voluptate unde
+          repellendus. Consequuntur non doloribus veritatis reiciendis sunt nisi
+          quisquam architecto eligendi adipisci voluptates soluta,
+          exercitationem sit libero ad, dolor atque repudiandae obcaecati
+          nostrum, velit natus repellendus fugit? Assumenda quisquam
+          reprehenderit natus officia maiores? Rerum nisi voluptates odio atque,
+          necessitatibus tempore corrupti optio quos officia voluptatibus
+          incidunt provident eveniet fugit reprehenderit quasi cumque nihil
+          inventore! Cum quasi vitae illum quidem natus nam, repudiandae libero,
+          hic placeat quos facere laboriosam maxime dicta quod dolore quas odit
+          ipsam minima. Sapiente debitis, nemo minima nobis reprehenderit
+          incidunt repellat voluptates pariatur architecto ipsam neque
+          praesentium itaque explicabo doloremque expedita nulla, tempora quam
+          modi quas ab, temporibus soluta! Voluptatem, dolores tempora. Eveniet
+          natus atque tempora perspiciatis deleniti.
+          <br /><br /><br />
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic fugiat
+          quod aspernatur molestias eos quae deserunt nostrum voluptate unde
+          repellendus. Consequuntur non doloribus veritatis reiciendis sunt nisi
+          quisquam architecto eligendi adipisci voluptates soluta,
+          exercitationem sit libero ad, dolor atque repudiandae obcaecati
+          nostrum, velit natus repellendus fugit? Assumenda quisquam
+          reprehenderit natus officia maiores? Rerum nisi voluptates odio atque,
+          necessitatibus tempore corrupti optio quos officia voluptatibus
+          incidunt provident eveniet fugit reprehenderit quasi cumque nihil
+          inventore! Cum quasi vitae illum quidem natus nam, repudiandae libero,
+          hic placeat quos facere laboriosam maxime dicta quod dolore quas odit
+          ipsam minima. Sapiente debitis, nemo minima nobis reprehenderit
+          incidunt repellat voluptates pariatur architecto ipsam neque
+          praesentium itaque explicabo doloremque expedita nulla, tempora quam
+          modi quas ab, temporibus soluta! Voluptatem, dolores tempora. Eveniet
+          natus atque tempora perspiciatis deleniti.
+          <br /><br /><br />
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic fugiat
+          quod aspernatur molestias eos quae deserunt nostrum voluptate unde
+          repellendus. Consequuntur non doloribus veritatis reiciendis sunt nisi
+          quisquam architecto eligendi adipisci voluptates soluta,
+          exercitationem sit libero ad, dolor atque repudiandae obcaecati
+          nostrum, velit natus repellendus fugit? Assumenda quisquam
+          reprehenderit natus officia maiores? Rerum nisi voluptates odio atque,
+          necessitatibus tempore corrupti optio quos officia voluptatibus
+          incidunt provident eveniet fugit reprehenderit quasi cumque nihil
+          inventore! Cum quasi vitae illum quidem natus nam, repudiandae libero,
+          hic placeat quos facere laboriosam maxime dicta quod dolore quas odit
+          ipsam minima. Sapiente debitis, nemo minima nobis reprehenderit
+          incidunt repellat voluptates pariatur architecto ipsam neque
+          praesentium itaque explicabo doloremque expedita nulla, tempora quam
+          modi quas ab, temporibus soluta! Voluptatem, dolores tempora. Eveniet
+          natus atque tempora perspiciatis deleniti.
+          <br /><br /><br />
+        </p>
+      </section>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
